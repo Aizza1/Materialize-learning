@@ -8,8 +8,144 @@
 </head>
 <body>
     <div class="container">
-        <h1 class="">Hello world</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error amet velit eveniet ex non, accusamus ipsam cum accusantium iure aliquid voluptatibus enim sequi ducimus, mollitia ipsa dicta obcaecati architecto ad natus saepe quam ipsum minima deleniti! Ratione ad aperiam commodi assumenda fugit odio repellendus at, labore eum praesentium ipsam. Magnam?</p>
+        <h1>Slider</h1>
+        <div class="slider">
+            <ul class="slides">
+                <li><img class="responsive-img" src="img/Scenery.jpg" alt=""></li>
+                <li><img class="responsive-img" src="img/Beach.jpg" alt=""></li>
+                <li><img class="responsive-img" src="img/Ai beach photo.jpg" alt=""></li>
+                <li><img class="responsive-img" src="img/Fine waters.jpg" alt=""></li>
+                <li><img class="responsive-img" src="img/Island trees.jpg" alt=""></li>
+            </ul>
+        </div>
     </div>
+    
+    <div class="container orange lighten-4">
+        <h1 class="blue-text text-darken-4">Hello world</h1>
+        <p class="red-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error amet velit eveniet ex non, accusamus ipsam cum accusantium iure aliquid voluptatibus enim sequi ducimus, mollitia ipsa dicta obcaecati architecto ad natus saepe quam ipsum minima deleniti! Ratione ad aperiam commodi assumenda fugit odio repellendus at, labore eum praesentium ipsam. Magnam?</p>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m6 l4"><img class="responsive-img" src="img/sunset wallpaper hd.jpg" alt=""></div>
+            <div class="col s12 m6 l4"><img class="responsive-img" src="img/sunset wallpaper hd.jpg" alt=""></div>
+            <div class="col s12 m6 l4 hide-on-med-only"><img class="responsive-img" src="img/sunset wallpaper hd.jpg" alt=""></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1 class="purple-text">Available items</h1>
+        <p>These items have been restocked</p>
+        <div class="row">
+            <div class="col s12 m6 l4">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <img class="responsive-img materialboxed" src="img/Cap.jpg" alt="">
+                    </div>
+                    <div class="card-content">
+                        <span class="purple-text">Purple cap by Max G</span>
+                        <p>Desgned with the finest silk materials, just for you</p>
+                    </div>
+                    <div class="card-action">
+                        <a class="btn-small" href="">Buy now</a>
+                        <a href="">Details</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col s12 m6 l4">
+                <div class="card hoverable">
+                    <div class="card-image"> 
+                        <img class="responsive-img materialboxed" src="img/Bag.jpg"></img>
+                    </div>
+                    <div class="card-content">
+                        <span class="green-text">Green hand bag</span>
+                        <p>Made with leather, suitable for formal settings</p>
+                    </div>
+                    <div class="card-action">
+                        <a class="btn-small" href="">Buy now</a>
+                        <a href="">Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m6 l4">
+                <div class="card hoverable">
+                    <div class="card-image"> 
+                        <img class="responsive-img materialboxed" src="img/Sneakers.jpg"></img>
+                    </div>
+                    <div class="card-content">
+                        <span class="orange-text light">High top Sneakers</span>
+                        <p>Stay active & comfy with high quality sneakers</p>
+                    </div>
+                    <div class="card-action">
+                        <a class="btn-small" href="">Buy now</a>
+                        <a href="">Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m6 l4">
+                <div class="card hoverable">
+                    <div class="card-image"> 
+                        <img class="responsive-img materialboxed" src="img/Scarf.jpg"></img>
+                    </div>
+                    <div class="card-content">
+                        <span class="blue-text">Scarf, mitten and beanie</span>
+                        <p>Comfy soft knitted winter set, Designed to keep you warm </p>
+                    </div>
+                    <div class="card-action">
+                        <a class="btn-small" href="">Buy now</a>
+                        <a href="">Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m6 l4">
+                <div class="card hoverable">
+                    <div class="card-image"> 
+                        <img class="responsive-img materialboxed" src="img/Bow tie.jpg"></img>
+                    </div>
+                    <div class="card-content">
+                        <span class="deep-purple-text">Adjustable bow tie</span>
+                        <p>Cute and formal all in one to accesorise the neck</p>
+                    </div>
+                    <div class="card-action">
+                        <a class="btn-small" href="">Buy now</a>
+                        <a href="">Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m6 l4">
+                <div class="card hoverable">
+                    <div class="card-image"> 
+                        <img class="responsive-img materialboxed" src="img/rings.png"></img>
+                    </div>
+                    <div class="card-content">
+                        <span class="deep-purple-text">Unisex rings</span>
+                        <p>Gold rings for all kinds of outfits & aesthetic</p>
+                    </div>
+                    <div class="card-action">
+                        <a class="btn-small" href="">Buy now</a>
+                        <a href="">Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
+<script src="js/jquery.js"></script>
+<script src="js/materialize.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.materialboxed').materialbox();
+        $('.slider').slider({
+            height: 300, 
+            indicators:false, 
+            interval: 1000
+        })
+    });
+</script>
 </html>
